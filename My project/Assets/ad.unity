@@ -311,13 +311,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'New Text
-
-    New Text
-
-    New Text
-
-    New Text'
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -693,7 +687,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae68371b86d0d664f8049bb3837c0741, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textlabel: {fileID: 196278228}
+  textLabel: {fileID: 196278228}
 --- !u!114 &1413142623
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -787,6 +781,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fdef08cb72c9234f98b7726421f4910, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  typewriterSpeed: 25
 --- !u!1 &1579467802
 GameObject:
   m_ObjectHideFlags: 0
