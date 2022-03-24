@@ -10,9 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4eec81ffea4c19347a36d093c940b7b7, type: 3}
-  m_Name: jes
+  m_Name: maybe
   m_EditorClassIdentifier: 
   dialogue:
-  - ja
-  - ja ik heb een vader
-  responses: []
+  - you wanna awnser
+  responses:
+  - responseText: bye
+    dialogueObject: {fileID: 11400000, guid: 1c61b40978057d343a04d6e09d633285, type: 2}

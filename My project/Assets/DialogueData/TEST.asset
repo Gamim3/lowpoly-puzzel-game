@@ -19,8 +19,13 @@ MonoBehaviour:
   - 'hoi dit is een 2e test
 
     goedemiddag'
+  - heb je een vader
   responses:
   - responseText: yes
     dialogueObject: {fileID: 11400000, guid: 8dc042b35a35c4b4aab13fb36b4a025c, type: 2}
   - responseText: no
     dialogueObject: {fileID: 11400000, guid: ce180779e041065469a7e97e3eaf2d51, type: 2}
+  - responseText: maybe
+    dialogueObject: {fileID: 11400000, guid: 868c26ab5eef0fe4f837fb282aad1482, type: 2}
+  - responseText: fuckof mate
+    dialogueObject: {fileID: 11400000, guid: 4da52214bbc8e93458cf747ad32d4dff, type: 2}
