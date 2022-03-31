@@ -8,7 +8,10 @@ public class InteractScript : MonoBehaviour
 
     public DialogeuUI DialogeuUI => dialogeuUI;
 
-    public IInteractible Interactible { get; set; }  
+    public IInteractible Interactible { get; set; }
+
+    public GameObject player;
+    public GameObject playerCamera;
 
     // Start is called before the first frame update
     void Start()
@@ -24,6 +27,10 @@ public class InteractScript : MonoBehaviour
             if (Interactible != null)
             {
                 Interactible.Interact(interactScript: this);
+                player.GetComponent<PlayerMovement>().inMenu = true;
+                playerCamera.GetComponent<MouseLook>().inMenu = true;
+
+                Cursor.lockState = CursorLockMode.None;
             }
         }
     }

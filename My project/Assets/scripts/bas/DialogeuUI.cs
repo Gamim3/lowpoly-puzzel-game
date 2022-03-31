@@ -12,6 +12,9 @@ public class DialogeuUI : MonoBehaviour
     private TypeWriterEffect typewritereffect;
     private ResponseHandler responseHandler;
 
+    public GameObject player;
+    public GameObject playerCamera;
+
     private void Start()
     {
         typewritereffect = GetComponent<TypeWriterEffect>();
@@ -53,5 +56,10 @@ public class DialogeuUI : MonoBehaviour
         IsOpen = false;
         dialogueBox.SetActive(false);
         textLabel.text = string.Empty;
+
+        player.GetComponent<PlayerMovement>().inMenu = false;
+        playerCamera.GetComponent<MouseLook>().inMenu = false;
+
+        Cursor.lockState = CursorLockMode.Locked;
     }
 }

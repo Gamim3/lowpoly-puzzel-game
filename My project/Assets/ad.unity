@@ -223,7 +223,7 @@ Transform:
   - {fileID: 466309580}
   - {fileID: 1362487715}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1479462
 MonoBehaviour:
@@ -246,6 +246,7 @@ MonoBehaviour:
   groundMask:
     serializedVersion: 2
     m_Bits: 64
+  inMenu: 0
 --- !u!54 &1479463
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -293,6 +294,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogeuUI: {fileID: 1255703022}
+  player: {fileID: 1479457}
+  playerCamera: {fileID: 466309577}
 --- !u!1001 &58361382
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -302,7 +305,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2170880847239023206, guid: c16feac28aa494c4f84a4eb40c57075f, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2170880847239023206, guid: c16feac28aa494c4f84a4eb40c57075f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -525,6 +528,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mouseSens: 100
   playerBody: {fileID: 1479461}
+  inMenu: 0
 --- !u!1001 &467419197
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -538,7 +542,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9162259123404609537, guid: d882a0a560af519408c4258c67efe87f, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 9162259123404609537, guid: d882a0a560af519408c4258c67efe87f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -780,7 +784,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1651229054
 PrefabInstance:
@@ -931,6 +935,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6058105034790183565, guid: 3aed428defb0bb04f849c8a352879e58, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1479457}
+    - target: {fileID: 6058105034790183565, guid: 3aed428defb0bb04f849c8a352879e58, type: 3}
+      propertyPath: playerBody
+      value: 
+      objectReference: {fileID: 1479457}
+    - target: {fileID: 6058105034790183565, guid: 3aed428defb0bb04f849c8a352879e58, type: 3}
+      propertyPath: playerCamera
+      value: 
+      objectReference: {fileID: 466309577}
     - target: {fileID: 6058105034790183566, guid: 3aed428defb0bb04f849c8a352879e58, type: 3}
       propertyPath: m_Name
       value: Canvas
