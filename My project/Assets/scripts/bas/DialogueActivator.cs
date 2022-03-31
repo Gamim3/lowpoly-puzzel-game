@@ -24,6 +24,10 @@ public class DialogueActivator : MonoBehaviour, IInteractible
 
     public void Interact(InteractScript interactScript)
     {
+        if (TryGetComponent(out DialogueResponseEvent responseEvents))
+        {
+            interactScript.DialogeuUI.AddResponseEvents(responseEvents.Events);
+        }
         interactScript.DialogeuUI.ShowDialogue(dialogueObject);
     }
 }

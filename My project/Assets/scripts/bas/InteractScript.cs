@@ -13,6 +13,8 @@ public class InteractScript : MonoBehaviour
     public GameObject player;
     public GameObject playerCamera;
 
+    public bool inMenu;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -22,6 +24,7 @@ public class InteractScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (inMenu == true) return;
         if (Input.GetButtonDown("Use"))
         {
             if (Interactible != null)
