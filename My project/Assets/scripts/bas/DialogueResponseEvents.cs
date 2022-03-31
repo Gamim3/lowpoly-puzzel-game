@@ -2,10 +2,12 @@ using UnityEngine;
 using System;
 
 
-public class DialogueResponseEvent : MonoBehaviour
+public class DialogueResponseEvents : MonoBehaviour
 {
     [SerializeField] private DialogueObject dialogueObject;
     [SerializeField] private ResponseEvent[] events;
+
+    public DialogueObject DialogueObject => dialogueObject;
 
     public ResponseEvent[] Events => events;
 

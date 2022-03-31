@@ -4,6 +4,12 @@ public class DialogueActivator : MonoBehaviour, IInteractible
 {
     [SerializeField] private DialogueObject dialogueObject;
 
+    public void UpdateDialogueObject(DialogueObject dialogueObject)
+    {
+        this.dialogueObject = dialogueObject;
+    }
+
+
     private void OnTriggerEnter(Collider other)
     {
         if(other.CompareTag("Player") && other.TryGetComponent(out InteractScript interactScript))
@@ -24,7 +30,7 @@ public class DialogueActivator : MonoBehaviour, IInteractible
 
     public void Interact(InteractScript interactScript)
     {
-        if (TryGetComponent(out DialogueResponseEvent responseEvents))
+        if (TryGetComponent(out DialogueResponseEvents responseEvents) && responseEvents.DialogueObject == this)
         {
             interactScript.DialogeuUI.AddResponseEvents(responseEvents.Events);
         }
