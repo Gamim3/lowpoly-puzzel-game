@@ -48,7 +48,7 @@ public class ResponseHandler : MonoBehaviour
         responseBox.gameObject.SetActive(true);
     }
 
-    private void OnPickedResponse(Response response, int responseIndex)
+    public void OnPickedResponse(Response response, int responseIndex)
     {
         responseBox.gameObject.SetActive(false);
 

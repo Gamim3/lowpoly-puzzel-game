@@ -22,5 +22,8 @@ MonoBehaviour:
   responses:
   - responseText: yes
     dialogueObject: {fileID: 11400000, guid: c7ccd76548b88ec4db8b22f44637c357, type: 2}
+    reaction: {fileID: 0}
   - responseText: no
     dialogueObject: {fileID: 11400000, guid: 279fea27bd816e643988dc80de34711f, type: 2}
+    reaction: {fileID: 0}
+  first: 1

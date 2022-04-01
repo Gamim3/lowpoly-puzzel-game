@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class aanUit : MonoBehaviour
 {
+    public GameObject cube;
     // Start is called before the first frame update
     void Start()
     {
-        uit();
+        
     }
 
     // Update is called once per frame
@@ -16,8 +17,8 @@ public class aanUit : MonoBehaviour
         
     }
 
-    public void uit()
+    public void Uit()
     {
-        gameObject.SetActive(false);
+        cube.SetActive(false);
     }
 }

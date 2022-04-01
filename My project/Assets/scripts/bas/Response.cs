@@ -10,5 +10,5 @@ public class Response
 
     public DialogueObject DialogueObject => dialogueObject;
 
-
+    public GameObject reaction;
 }

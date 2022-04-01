@@ -8,6 +8,8 @@ public class DialogueObject : ScriptableObject
     [TextArea] public string[] dialogue;
     public Response[] responses;
 
+    public bool first;
+
     public string[] Dialogue => dialogue;
 
     public bool hasResponses => Responses != null && Responses.Length > 0;
