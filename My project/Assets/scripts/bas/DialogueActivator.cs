@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class DialogueActivator : MonoBehaviour, IInteractible
 {
-    [SerializeField] private DialogueObject dialogueObject;
+    public DialogueObject dialogueObject;
 
     public void UpdateDialogueObject(DialogueObject dialogueObject)
     {

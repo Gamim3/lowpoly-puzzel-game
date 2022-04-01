@@ -5,9 +5,9 @@ using System.Collections.Generic;
 
 public class ResponseHandler : MonoBehaviour
 {
-    [SerializeField] private RectTransform responseBox;
-    [SerializeField] private RectTransform responseButtonTemplate;
-    [SerializeField] private RectTransform responseContainer;
+    public RectTransform responseBox;
+    public RectTransform responseButtonTemplate;
+    public RectTransform responseContainer;
 
     private DialogeuUI dialogueUI;
     private ResponseEvent[] responseEvents;

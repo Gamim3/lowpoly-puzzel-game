@@ -4,8 +4,8 @@ using System;
 
 public class DialogueResponseEvents : MonoBehaviour
 {
-    [SerializeField] private DialogueObject dialogueObject;
-    [SerializeField] private ResponseEvent[] events;
+    public DialogueObject dialogueObject;
+    public ResponseEvent[] events;
 
     public DialogueObject DialogueObject => dialogueObject;
 

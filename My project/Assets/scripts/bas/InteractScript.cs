@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class InteractScript : MonoBehaviour
 {
-    [SerializeField] private DialogeuUI dialogeuUI;
+    public DialogeuUI dialogeuUI;
 
     public DialogeuUI DialogeuUI => dialogeuUI;
 

@@ -4,8 +4,8 @@ using TMPro;
 
 public class DialogeuUI : MonoBehaviour
 {
-    [SerializeField] private GameObject dialogueBox;
-    [SerializeField] private TMP_Text textLabel;
+    public GameObject dialogueBox;
+    public TMP_Text textLabel;
 
     public bool IsOpen { get; private set; }
 
