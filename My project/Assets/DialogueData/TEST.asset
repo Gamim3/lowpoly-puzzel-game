@@ -22,8 +22,11 @@ MonoBehaviour:
   responses:
   - responseText: yes
     dialogueObject: {fileID: 11400000, guid: c7ccd76548b88ec4db8b22f44637c357, type: 2}
-    reaction: {fileID: 0}
+    hasEvent: 1
+    activatorLoc: {x: 0, y: -20, z: 0}
+    reaction: {fileID: 4609338489089099517, guid: 023b5eee4a3ab994a9527ef8dc7cc0f9, type: 3}
   - responseText: no
     dialogueObject: {fileID: 11400000, guid: 279fea27bd816e643988dc80de34711f, type: 2}
+    hasEvent: 0
+    activatorLoc: {x: 0, y: 0, z: 0}
     reaction: {fileID: 0}
-  first: 1

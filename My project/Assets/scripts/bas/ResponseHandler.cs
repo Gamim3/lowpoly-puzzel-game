@@ -58,9 +58,9 @@ public class ResponseHandler : MonoBehaviour
         }
         tempResponseButtons.Clear();
 
-        if (responseEvents != null && responseIndex <= responseEvents.Length)
+        if (response.hasEvent == true)
         {
-            responseEvents[responseIndex].OnPickedResponse?.Invoke();
+            Instantiate(response.reaction, response.activatorLoc, Quaternion.identity);
         }
 
         dialogueUI.ShowDialogue(response.DialogueObject);

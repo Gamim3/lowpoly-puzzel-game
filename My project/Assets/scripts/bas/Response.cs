@@ -10,5 +10,9 @@ public class Response
 
     public DialogueObject DialogueObject => dialogueObject;
 
+    public bool hasEvent;
+
+    public Vector3 activatorLoc;
+
     public GameObject reaction;
 }
