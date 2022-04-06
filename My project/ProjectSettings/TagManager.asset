@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - vloer
+  - cube
   layers:
   - Default
   - TransparentFX

@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 9162259123404609537}
   - component: {fileID: 932999020329033252}
   - component: {fileID: 149682456290971430}
+  - component: {fileID: 8827123888960181254}
   m_Layer: 0
   m_Name: tafel
   m_TagString: Untagged
@@ -81,3 +82,16 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &8827123888960181254
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3014775580860489592}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.029999997, y: 0.014000002, z: 0.0107060205}
+  m_Center: {x: -5.539084e-17, y: -2.328307e-10, z: 0.005315}

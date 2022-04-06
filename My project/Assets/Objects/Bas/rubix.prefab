@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5459027970461478208}
   - component: {fileID: 6785190498377322349}
   - component: {fileID: 1788414438715512572}
+  - component: {fileID: 7901790238827791343}
   m_Layer: 0
   m_Name: rubix
   m_TagString: Untagged
@@ -81,3 +82,16 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &7901790238827791343
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 846584558123496701}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.021031916, y: 0.021031912, z: 0.02103191}
+  m_Center: {x: 0, y: 0, z: 0.010524047}
