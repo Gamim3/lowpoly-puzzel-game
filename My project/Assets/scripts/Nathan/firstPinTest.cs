@@ -11,6 +11,7 @@ public class FirstPinTest : MonoBehaviour
     public float movementFloat;
     public Vector3 lockPinRotation;
     public float maxAngle = 0f;
+    public GameObject secondPin;
 
     // Start is called before the first frame update
     void Start()
@@ -32,7 +33,7 @@ public class FirstPinTest : MonoBehaviour
         } 
         if (firstPin == true)
         {
-            
+            GameObject.Find("secondPin").GetComponent<SecondPinTest>();
         }
     }
        
