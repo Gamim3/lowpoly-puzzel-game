@@ -18,6 +18,8 @@ public class GrabObject : MonoBehaviour
     public bool grabbing;
     public bool isGrabbing;
 
+    public GameObject useUI;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -28,11 +30,28 @@ public class GrabObject : MonoBehaviour
     void Update()
     {
         grabLocation = grab.transform.position;
+        if (Physics.Raycast(transform.position,transform.forward, out hit, raycastLengte) && isGrabbing == false)
+        {
+            if (hit.transform.gameObject.tag == "cube")
+            {
+                useUI.SetActive(true);
+            }
+        }
+        else
+        {
+            if(useUI.active == false)
+            {
+                useUI.SetActive(false);
+            }
+        }
+
         if (Input.GetButtonDown("Use"))
         {
-            if (isGrabbing == true)
+            if (grabbing == true)
             {
+                isGrabbing = false;
                 grabbing = false;
+                return;
             }
             if (Physics.Raycast(transform.position, transform.forward, out hit, raycastLengte) && isGrabbing == false)
             {
@@ -48,7 +67,7 @@ public class GrabObject : MonoBehaviour
         if (grabbing == true)
         {
             rubix.transform.position = grabLocation;
-            rubix.GetComponent<Rigidbody>().velocity.y = 0f;
+            rubix.GetComponent<Rigidbody>().velocity = new Vector3(0f,0f,0f);
         }
         
     }

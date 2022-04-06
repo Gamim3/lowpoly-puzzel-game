@@ -45,7 +45,7 @@ public class SceneTransition : MonoBehaviour
             }
             if(waiting == true)
             {
-                waitUntilChange += -1f * Time.deltaTime;
+                waitUntilChange -= 1f * Time.deltaTime;
             }
         }
         if (waitUntilChange <= 0)

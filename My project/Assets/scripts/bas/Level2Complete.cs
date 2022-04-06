@@ -2,11 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class WorldEventHelper : MonoBehaviour
+public class Level2Complete : MonoBehaviour
 {
-    public bool aan;
-
-    public RaycastHit hit;
+    public GameObject worldEventHelper;
+    public GameObject lift;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,9 +15,9 @@ public class WorldEventHelper : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Physics.Raycast(transform.position, transform.forward, out hit))
+        if(worldEventHelper.GetComponent<WorldEventHelper>().aan == true)
         {
-            aan = true;
+            lift.GetComponent<SceneTransition>().canChangeScene = true;
         }
     }
 }

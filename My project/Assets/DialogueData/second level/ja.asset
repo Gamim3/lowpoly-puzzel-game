@@ -10,20 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4eec81ffea4c19347a36d093c940b7b7, type: 3}
-  m_Name: help cube
+  m_Name: ja
   m_EditorClassIdentifier: 
   dialogue:
-  - 'BOT: hey'
-  - 'Jij: Hoi'
-  - 'BOT: Kan ik U ergens mee helpen.'
+  - 'Jij: Ik moet naar de baas van dit gebouw.'
+  - 'BOT: OOOHHH jij bent de nieuwe gast. WELKOM!!'
+  - 'BOT: Ik kan je hulp goed gebruiken.'
+  - 'BOT: Er licht een nieuwe puzzel daar in het midden
+
+    van de kamer.'
   responses:
-  - responseText: ja
-    dialogueObject: {fileID: 11400000, guid: 22d6abfe472a73240abc91e1bb9a5c9e, type: 2}
-    hasEvent: 0
-    activatorLoc: {x: 0, y: 0, z: 0}
-    reaction: {fileID: 0}
-  - responseText: was jij niet beneden
-    dialogueObject: {fileID: 11400000, guid: c56e356bafa4f404784db6eb139bac87, type: 2}
+  - responseText: puzzel?
+    dialogueObject: {fileID: 11400000, guid: 05354a71cb9e3cd428136cce9e4f8696, type: 2}
     hasEvent: 0
     activatorLoc: {x: 0, y: 0, z: 0}
     reaction: {fileID: 0}

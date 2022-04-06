@@ -10,10 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4eec81ffea4c19347a36d093c940b7b7, type: 3}
-  m_Name: ja
+  m_Name: Waarom
   m_EditorClassIdentifier: 
   dialogue:
-  - 'je zij ja
-
-'
-  responses: []
+  - 'Jij: Waarom??'
+  - 'BOT: Jij wil toch naar de baas zonder mijn hulp kom je er niet.'
+  responses:
+  - responseText: okay
+    dialogueObject: {fileID: 11400000, guid: 7f25fd849204a6c4cb4519b54831bbe5, type: 2}
+    hasEvent: 0
+    activatorLoc: {x: 0, y: 0, z: 0}
+    reaction: {fileID: 0}

@@ -13,9 +13,8 @@ MonoBehaviour:
   m_Name: first
   m_EditorClassIdentifier: 
   dialogue:
-  - 'BOT: Hallo,
-
-    BOT: Waar kan ik U vandaag mee helpen'
+  - 'BOT: Hallo,'
+  - 'BOT: Waar kan ik U vandaag mee helpen'
   responses:
   - responseText: ik kom hier werken
     dialogueObject: {fileID: 11400000, guid: ddd38f3afeb62f44090149332c42ec8a, type: 2}
