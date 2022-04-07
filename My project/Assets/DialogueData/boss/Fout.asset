@@ -18,6 +18,6 @@ MonoBehaviour:
   responses:
   - responseText: Verlaat?
     dialogueObject: {fileID: 11400000, guid: af3bb9d37254f964296f45fa5ba899e9, type: 2}
-    hasEvent: 0
-    activatorLoc: {x: 0, y: 0, z: 0}
-    reaction: {fileID: 0}
+    hasEvent: 1
+    activatorLoc: {x: 1.75, y: -20, z: 0}
+    reaction: {fileID: 7153298048728417257, guid: f2b1c038286e24e4181b529949724eef, type: 3}

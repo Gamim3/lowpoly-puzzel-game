@@ -14,4 +14,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/BossFloer.unity
     guid: fc9e40de4ebb7a046bb20a792e5f2af3
+  - enabled: 1
+    path: Assets/Scenes/Main.unity
+    guid: bddd44a300c9bab47b05e39164f1d2ea
+  - enabled: 1
+    path: Assets/Scenes/LoseScreen.unity
+    guid: 6084bc959d563d74291c0ade5b3f437e
+  - enabled: 1
+    path: Assets/Scenes/WinScreen.unity
+    guid: 14c95a8efe4b0bb4c94b3c69ae298fa9
   m_configObjects: {}
