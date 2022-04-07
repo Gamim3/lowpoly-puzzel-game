@@ -11,6 +11,7 @@ public class PinScript : MonoBehaviour
     public Vector3 lockPinRotation;
     public float maxAngle = 0f;
     public GameObject nextPin;
+    public bool unlockMechanism;
     // Start is called before the first frame update
     void Start()
     {
