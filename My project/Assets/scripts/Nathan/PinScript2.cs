@@ -2,18 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FourthPin : MonoBehaviour
+public class PinScript : MonoBehaviour
 {
-    public bool fourthPin;
+    public bool firstPin;
     public float rotationSpeed = 0.1f;
     public Vector3 rot;
     public float rotationFloat;
     public Vector3 lockPinRotation;
-    public int maxAngle;
+    public float maxAngle = 0f;
+    public GameObject nextPin;
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -26,8 +27,13 @@ public class FourthPin : MonoBehaviour
 
         if (lockPinRotation.z > value - 2.5f && lockPinRotation.z < value + 2.5f)
         {
-            fourthPin = true;
+            firstPin = true;
         }
-
+        if (firstPin == true)
+        {
+            nextPin.GetComponent<PinScript>();
+            firstPin = false;
+        }
     }
 }
+
