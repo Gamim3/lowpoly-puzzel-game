@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level2.unity
     guid: 738f06a2ddb0c834b8c74cf75327b7bb
+  - enabled: 1
+    path: Assets/Scenes/BossFloer.unity
+    guid: fc9e40de4ebb7a046bb20a792e5f2af3
   m_configObjects: {}
