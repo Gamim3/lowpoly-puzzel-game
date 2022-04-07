@@ -6,6 +6,7 @@ TagManager:
   tags:
   - vloer
   - cube
+  - LiftPas
   layers:
   - Default
   - TransparentFX
