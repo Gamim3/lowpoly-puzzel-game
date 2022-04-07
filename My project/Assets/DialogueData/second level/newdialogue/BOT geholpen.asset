@@ -19,6 +19,6 @@ MonoBehaviour:
   responses:
   - responseText: Bedankt
     dialogueObject: {fileID: 11400000, guid: 6179bd45764f761489bd0b5873df1859, type: 2}
-    hasEvent: 0
+    hasEvent: 1
     activatorLoc: {x: 0, y: -20, z: 0}
-    reaction: {fileID: 6198216957947506107, guid: a8a6a87f77909cb4895d574d2a218d06, type: 3}
+    reaction: {fileID: 7153298048728417257, guid: f2b1c038286e24e4181b529949724eef, type: 3}
