@@ -1,7 +1,9 @@
 using System.Collections;
 using UnityEngine;
 using TMPro;
+// tutorial van https://www.youtube.com/c/SemagGames
 
+// DialogueUI word gebruikt om de text en responses te laten zien in het UI
 public class DialogeuUI : MonoBehaviour
 {
     public GameObject dialogueBox;
@@ -29,10 +31,6 @@ public class DialogeuUI : MonoBehaviour
         
     }
 
-    public void AddResponseEvents(ResponseEvent[] responseEvents)
-    {
-        responseHandler.AddResponseEvents(responseEvents);
-    }
 
     private IEnumerator StepThroughDialogue(DialogueObject dialogueObject)
     {

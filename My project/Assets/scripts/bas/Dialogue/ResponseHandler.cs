@@ -3,6 +3,9 @@ using TMPro;
 using UnityEngine.UI;
 using System.Collections.Generic;
 
+
+// responseHandler zorgt ervoor dat je op een response button kan klikken en er een antwoord op komt.
+
 public class ResponseHandler : MonoBehaviour
 {
     public RectTransform responseBox;
@@ -10,18 +13,12 @@ public class ResponseHandler : MonoBehaviour
     public RectTransform responseContainer;
 
     private DialogeuUI dialogueUI;
-    private ResponseEvent[] responseEvents;
 
     List<GameObject> tempResponseButtons = new List<GameObject>();
 
     private void Start()
     {
         dialogueUI = GetComponent<DialogeuUI>();
-    }
-
-    public void AddResponseEvents(ResponseEvent[] responseEvents)
-    {
-        this.responseEvents = responseEvents;
     }
 
     public void ShowResponses(Response[] responses)
