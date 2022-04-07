@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4eec81ffea4c19347a36d093c940b7b7, type: 3}
+  m_Name: Goed 2
+  m_EditorClassIdentifier: 
+  dialogue:
+  - 'BOSS: Goed gedaan, je bent aangenomen'
+  responses:
+  - responseText: LETS GOO
+    dialogueObject: {fileID: 11400000, guid: cffc7aea00dffb643a53bf6f2e27b236, type: 2}
+    hasEvent: 0
+    activatorLoc: {x: 0, y: 0, z: 0}
+    reaction: {fileID: 0}
+  - responseText: Dank U
+    dialogueObject: {fileID: 11400000, guid: 32593bdf698569644968471bf5664a90, type: 2}
+    hasEvent: 0
+    activatorLoc: {x: 0, y: 0, z: 0}
+    reaction: {fileID: 0}
