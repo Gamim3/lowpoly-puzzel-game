@@ -2,13 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FirstPinTest1 : MonoBehaviour
+public class PinScript : MonoBehaviour
 {
     public bool firstPin;
     public float rotationSpeed = 0.1f;
     public Vector3 rot;
     public float rotationFloat;
-    public float movementFloat;
     public Vector3 lockPinRotation;
     public float maxAngle = 0f;
     public GameObject nextPin;
@@ -22,17 +21,21 @@ public class FirstPinTest1 : MonoBehaviour
     void Update()
     {
         rotationFloat = Input.GetAxis("Horizontal");
-        rot.y = rotationFloat * rotationSpeed;
-        transform.Rotate(rot);
+        transform.Rotate(Vector3.up * rotationFloat * rotationSpeed);
         lockPinRotation = transform.eulerAngles;
         float value = Random.Range(2.5f, 357.5f);
-        if (lockPinRotation.y > value - 2.5f && lockPinRotation.y < value + 2.5f)
+
+        if (lockPinRotation.z > value - 2.5f && lockPinRotation.z < value + 2.5f)
         {
             firstPin = true;
         }
         if (firstPin == true)
         {
-          nextPin.GetComponent<SecondPinTest>();
+          nextPin.GetComponent<PinScript>();
+        }
+        if(PinScript = true)
+        {
+            lock rotationFloat;
         }
     }
 }
