@@ -26,7 +26,7 @@ public class DialogeuUI : MonoBehaviour
     public void ShowDialogue(DialogueObject dialogueObject)
     {
         IsOpen = true;
-        dialogueBox.SetActive(true);
+        dialogueBox.SetActive(true);//zet de dialogue box aan
         StartCoroutine(routine: StepThroughDialogue(dialogueObject));
         
     }
@@ -34,19 +34,19 @@ public class DialogeuUI : MonoBehaviour
 
     private IEnumerator StepThroughDialogue(DialogueObject dialogueObject)
     {
-        for(int i = 0; i < dialogueObject.Dialogue.Length; i++)
+        for(int i = 0; i < dialogueObject.Dialogue.Length; i++)//wacht tot dat de speler op fire 1 klikt als er geen response is.(i++ = i word groter elke keer dat deze lijn komt
         {
-            string dialogue = dialogueObject.Dialogue[i];
+            string dialogue = dialogueObject.Dialogue[i];//string dialogue word gelijk aan de dialogue text in dialogue object met i als index
             yield return typewritereffect.Run(dialogue, textLabel);
 
-            if (i == dialogueObject.Dialogue.Length - 1 && dialogueObject.hasResponses) break;
-            yield return new WaitUntil(() => Input.GetButtonDown("Fire1"));
+            if (i == dialogueObject.Dialogue.Length - 1 && dialogueObject.hasResponses) break;//als hij responses heeft stopt hij hier
+            yield return new WaitUntil(() => Input.GetButtonDown("Fire1"));//stopt de coroutine todat je klikt
 
         }
 
         if (dialogueObject.hasResponses)
         {
-            responseHandler.ShowResponses(dialogueObject.Responses);
+            responseHandler.ShowResponses(dialogueObject.Responses);//als de dialogue een response heeft laat hij de responses
         }
         else
         {
@@ -57,8 +57,8 @@ public class DialogeuUI : MonoBehaviour
     private void CloseDialogueBox()
     {
         IsOpen = false;
-        dialogueBox.SetActive(false);
-        textLabel.text = string.Empty;
+        dialogueBox.SetActive(false);//zet de dialogue box uit
+        textLabel.text = string.Empty;//zet de text naar niks
 
         player.GetComponent<PlayerMovement>().inMenu = false;
         playerCamera.GetComponent<MouseLook>().inMenu = false;
