@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class UnlockScript : MonoBehaviour
 {
+    public bool fourthPin;
+    public bool lockOpener;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -13,6 +16,9 @@ public class UnlockScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if(fourthPin = true)
+        {
+            lockOpener = true;
+        }
     }
 }
