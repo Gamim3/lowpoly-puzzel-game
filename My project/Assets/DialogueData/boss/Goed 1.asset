@@ -22,7 +22,7 @@ MonoBehaviour:
     hasEvent: 0
     activatorLoc: {x: 0, y: 0, z: 0}
     reaction: {fileID: 0}
-  - responseText: 6
+  - responseText: 5
     dialogueObject: {fileID: 11400000, guid: a3285749f2872904dba95e70696d46b5, type: 2}
     hasEvent: 0
     activatorLoc: {x: 0, y: 0, z: 0}
