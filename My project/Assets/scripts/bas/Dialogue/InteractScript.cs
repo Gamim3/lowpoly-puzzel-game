@@ -9,7 +9,7 @@ public class InteractScript : MonoBehaviour
 {
     public DialogeuUI dialogeuUI;
 
-    public DialogeuUI DialogeuUI => dialogeuUI;
+    public DialogeuUI DialogeuUI => dialogeuUI;//pakt de dialogueUI, zorgt ervoor dat je de dialogue niet kan overwrighten
 
     public IInteractible Interactible { get; set; }
 
@@ -31,9 +31,9 @@ public class InteractScript : MonoBehaviour
         {
             if (Input.GetButtonDown("Use"))//kijkt of je de E knop inklikt
             {
-                if (Interactible != null)// != is ISNOT, 
+                if (Interactible != null)// != is IS NOT, 
                 {
-                    Interactible.Interact(interactScript: this);
+                    Interactible.Interact(interactScript: this);//this is dit 
                     player.GetComponent<PlayerMovement>().inMenu = true;
                     playerCamera.GetComponent<MouseLook>().inMenu = true;
 

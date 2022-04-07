@@ -15,7 +15,7 @@ public class ResponseHandler : MonoBehaviour
 
     private DialogeuUI dialogueUI;
 
-    List<GameObject> tempResponseButtons = new List<GameObject>();
+    List<GameObject> tempResponseButtons = new List<GameObject>();//maakt een lijst voor de response buttons
 
     private void Start()
     {
@@ -36,7 +36,7 @@ public class ResponseHandler : MonoBehaviour
             responseButton.GetComponent<TMP_Text>().text = response.ResponseText;//zet de text van de knop naar de text in response text
             responseButton.GetComponent<Button>().onClick.AddListener(call: () => OnPickedResponse(response));//plaatst een reactie op de knop en geeft de response die is gekozen door.
 
-            tempResponseButtons.Add(responseButton);
+            tempResponseButtons.Add(responseButton);//voegt de buttons toe die zijn aangemaakt aan de lijst tempresponsebutton
 
 
             responseBoxHeight += responseButtonTemplate.sizeDelta.y;//maakt de response box hoogte het zelfde als de template
@@ -50,17 +50,17 @@ public class ResponseHandler : MonoBehaviour
     {
         responseBox.gameObject.SetActive(false);
 
-        foreach (GameObject button in tempResponseButtons)
+        foreach (GameObject button in tempResponseButtons)//verwijdert elke button nadat er op 1 is geklikt
         {
             Destroy(button);
         }
-        tempResponseButtons.Clear();
+        tempResponseButtons.Clear();//cleared de lijst
 
         if (response.hasEvent == true)
         {
             Instantiate(response.reaction, response.activatorLoc, Quaternion.identity);
         }
 
-        dialogueUI.ShowDialogue(response.DialogueObject);
+        dialogueUI.ShowDialogue(response.DialogueObject); //maakt de dialogue opject in dialogue UI de dialogue object die in response staat
     }
 }

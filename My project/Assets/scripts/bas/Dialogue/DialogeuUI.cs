@@ -9,7 +9,7 @@ public class DialogeuUI : MonoBehaviour
     public GameObject dialogueBox;
     public TMP_Text textLabel;
 
-    public bool IsOpen { get; private set; }
+    public bool isOpen { get; private set; }//zorgt ervoor dat alleen dialogueUI hem true or false kan zetten maar andere scripts kunnen het wel zien
 
     private TypeWriterEffect typewritereffect;
     private ResponseHandler responseHandler;
@@ -25,7 +25,7 @@ public class DialogeuUI : MonoBehaviour
 
     public void ShowDialogue(DialogueObject dialogueObject)
     {
-        IsOpen = true;
+        isOpen = true;
         dialogueBox.SetActive(true);//zet de dialogue box aan
         StartCoroutine(routine: StepThroughDialogue(dialogueObject));
         
@@ -44,9 +44,9 @@ public class DialogeuUI : MonoBehaviour
 
         }
 
-        if (dialogueObject.hasResponses)
+        if (dialogueObject.hasResponses)//als de dialogue een response heeft laat hij de responses als hij geen responses heeft CloseDialogueBox
         {
-            responseHandler.ShowResponses(dialogueObject.Responses);//als de dialogue een response heeft laat hij de responses
+            responseHandler.ShowResponses(dialogueObject.Responses);
         }
         else
         {
@@ -56,7 +56,7 @@ public class DialogeuUI : MonoBehaviour
 
     private void CloseDialogueBox()
     {
-        IsOpen = false;
+        isOpen = false;
         dialogueBox.SetActive(false);//zet de dialogue box uit
         textLabel.text = string.Empty;//zet de text naar niks
 
